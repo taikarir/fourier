@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./p5.min.js"></script>
+  <script src="./svg-points.min.js"></script>
+  <title>Fourier Transform Visualization</title>
+  <style>
+    .float-right {
+      float: right;
+      padding: 20px;
+    }
+    
+    .input-label {
+      display: block;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <textarea style="float:right;" rows=10 cols=50 id="textarea"></textarea>
+  <div style="position:absolute;width:30%;height:40%;top:25%;right:0%;">
+    <label class="input-label" for="period">Period:</label>
+    <input class="" type="range" min="1" max="20" value="5" id="period">
+    <label class="" id="periodlabel"></label>
+    <br>
+    <label class="input-label" for="shiftx">Shift X:</label>
+    <input class="" type="range" min="-400" max="400" value="0" id="shiftx">
+    <label class="" id="shiftxlabel"></label>
+    <br>
+    <label class="input-label" for="shifty">Shift Y:</label>
+    <input class="" type="range" min="-400" max="400" value="0" id="shifty">
+    <label class="" id="shiftylabel"></label>
+    <br>
+    <label class="input-label" for="scale">Scale:</label>
+    <input class="" type="range" min="20" max="500" value="100" id="scale">
+    <label class="" id="scalelabel"></label>
+    <br>
+    <input class="" type="checkbox" id="showpoints">
+    <label class="" for="showpoints">Show points</label><br>
+  </div>
+  <script src="sketch.js"></script>
+
+  
+</body>
+</html>
+
